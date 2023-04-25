@@ -139,7 +139,7 @@ app.get('/doctor-availability/:date/:time', (req, res) => {
 
 })
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, function () {
     console.log(`listening on port ${PORT}`);
 })
